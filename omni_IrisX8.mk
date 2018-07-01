@@ -1,7 +1,7 @@
 LOCAL_PATH := device/Lava/IrisX8
 
 # Release name
-PRODUCT_RELEASE_NAME := irisX8
+PRODUCT_RELEASE_NAME := Iris X8
 
 # Inherit from our custom product configuration
 $(call inherit-product, vendor/omni/config/common.mk)
@@ -13,15 +13,15 @@ PRODUCT_COPY_FILES += \
 
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
-PRODUCT_AAPT_PREF_CONFIG := xhdpi
+PRODUCT_AAPT_PREF_CONFIG := hdpi
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 720
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := iris X8
-PRODUCT_NAME := omni_irisX8
+PRODUCT_DEVICE := Iris X8
+PRODUCT_NAME := omni_IrisX8
 PRODUCT_BRAND := iris
 PRODUCT_MODEL := Iris X8
 PRODUCT_MANUFACTURER := Lava
