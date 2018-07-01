@@ -3,9 +3,6 @@ LOCAL_PATH := device/Lava/IrisX8
 # Release name
 PRODUCT_RELEASE_NAME := irisX8
 
-# Inherit from our custom product configuration
-$(call inherit-product, vendor/omni/config/common.mk)
-
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
@@ -24,7 +21,7 @@ TARGET_SCREEN_WIDTH := 720
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := iris X8
-PRODUCT_NAME := omni_irisX8
+PRODUCT_NAME := omni_IrisX8
 PRODUCT_BRAND := iris
 PRODUCT_MODEL := Iris X8
 PRODUCT_MANUFACTURER := Lava
