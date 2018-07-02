@@ -17,7 +17,7 @@ TARGET_CPU_VARIANT := cortex-a7
 BOARD_KERNEL_PAGESIZE := 2048
 TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/kernel
 #BOARD_CUSTOM_MKBOOTIMG := $(LOCAL_PATH)/mkbootimg.mk
-BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x04000000 --tags_offset 0x0e000000 --board 1441186574 --mtk 1
+#BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x04000000 --tags_offset 0x0e000000 --board 1441186574 --mtk 1
 
 # make_ext4fs requires numbers in dec format
 BOARD_BOOTIMAGE_PARTITION_SIZE := 10485760
