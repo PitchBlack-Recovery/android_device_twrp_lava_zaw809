@@ -29,6 +29,7 @@ PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
 PRODUCT_COPY_FILES += \
-                      $(LOCAL_PATH)/recovery/etc/twrp.fstab:recovery/root/etc/twrp.fstab \
-                      $(LOCAL_PATH)/recovery/etc/recovery.fstab:recovery/root/etc/recovery.fstab \
-                      $(LOCAL_PATH)/recovery/etc/fstab.mt6592:recovery/root/etc/fstab.mt6592
+                      $(LOCAL_PATH)/recovery/etc/twrp.fstab.rc:recovery/root/twrp.fstab.rc \
+                      $(LOCAL_PATH)/recovery/etc/recovery.fstab.rc:recovery/root/recovery.fstab.rc \
+                      $(LOCAL_PATH)/recovery/etc/fstab.mt6592.rc:recovery/root/fstab.mt6592.rc \
+                      $(LOCAL_PATH)/recovery/etc/uevented.mt6592.rc:recovery/root/uevented.mt6592.rc
