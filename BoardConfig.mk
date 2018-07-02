@@ -16,14 +16,12 @@ TARGET_CPU_VARIANT := cortex-a7
 # BOARD_KERNEL_CMDLINE += \	     bootopt=64S3,32S1,32S1 \	androidboot.selinux=dissable	BOARD_KERNEL_BASE := 0x10000000
 BOARD_KERNEL_PAGESIZE := 2048
 TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/kernel
-BOARD_CUSTOM_MKBOOTIMG := mkbootimg.mk
-# BOARD_CUSTOM_BOOTIMG_MK := $(LOCAL_PATH)/bootimg.mk
-# BOARD_CUSTOM_BOOTIMG := true
-# BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x04000000 --tags_offset 0x0e000000 --board 1441186574 --mtk 1
+#BOARD_CUSTOM_MKBOOTIMG := $(LOCAL_PATH)/mkbootimg.mk
+#BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x04000000 --tags_offset 0x0e000000 --board 1441186574 --mtk 1
 
 # make_ext4fs requires numbers in dec format
 BOARD_BOOTIMAGE_PARTITION_SIZE := 10485760
-BOARD_RECOVERYIMAGE_PARTITION_SIZE := 13485760
+BOARD_RECOVERYIMAGE_PARTITION_SIZE := 17578909
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 1258291200
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 1237319680
 BOARD_CACHEIMAGE_PARTITION_SIZE := 134217728
@@ -39,7 +37,7 @@ BOARD_HAS_MTK_HARDWARE := true
 MTK_HARDWARE := true
 
 # TWRP stuff
-TW_THEME := portrait_hdpi
+TW_THEME := portrait_xhdpi
 TW_SDEXT_NO_EXT4 := true
 TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
 TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/class/android_usb/android0/f_mass_storage/lun/file"
@@ -66,3 +64,6 @@ TW_MAX_BRIGHTNESS := 255
 TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/recovery/etc/twrp.fstab
 BOARD_HAS_LARGE_FILESYSTEM := true
 
+#Official
+PB_OFFICIAL := true
+PB_FORCE_DD_FLASH := true
